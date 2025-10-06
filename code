@@ -1,0 +1,18 @@
+import java.util.Scanner;
+public class creditproject {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Выберите: стресс, мотивация, депрессия");
+        String s = sc.next();
+
+        if (s.equalsIgnoreCase("стресс")) {
+            System.out.println("По этой просьбе вы можете обратиться к Андрею Фарамзатовичу");
+        } else if (s.equalsIgnoreCase("мотивация")) {
+            System.out.println("По этой просьбе вы можете обратиться к Адольфу Миллеру");
+        } else if (s.equalsIgnoreCase("депрессия")) {
+            System.out.println("По этой просьбе вы можете обратиться к Бинияито Мусолани");
+        } else {
+            System.out.println("К сожалению, мы с этим помочь не можем");
+        }
+    }
+}
